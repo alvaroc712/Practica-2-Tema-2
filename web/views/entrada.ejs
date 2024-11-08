@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+<body>
+
+    <header id="top">
+        <%- include('partials/header') %>
+    </header>
+
+    <main>
+        <section id="box">
+            <img id="modalImage" src="" alt="Imagen de la película">
+            <h2 id="modalTitle"></h2>
+            <p><span id="modalIntro"></span></p>
+            <p><span id="modalCategory"></span></p>
+            <p><span id="modalContent"></span></p>
+            <button type="submit">Cerrar</button>
+        </section>
+    </main>
+
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="/javascripts/script.js"></script>
+    
+</body>
+</html>

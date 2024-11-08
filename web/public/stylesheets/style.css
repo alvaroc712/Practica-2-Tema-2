@@ -1,8 +1,58 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("entrada.css");
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.info p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+figure {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+figure img:hover {
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 10);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 1em;
+  color: #555;
 }
